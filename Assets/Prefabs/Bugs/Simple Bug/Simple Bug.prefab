@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3783851378356922383}
-  - component: {fileID: 523367190}
   m_Layer: 0
   m_Name: Simple Bug Model
   m_TagString: Untagged
@@ -33,26 +32,6 @@ Transform:
   m_Father: {fileID: 419267519264102354}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &523367190
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446138385932239160}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df77a6f43d0f1b74e86240523f1e8b18, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5099372174953275943
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +938,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 107bed11f66d8cb4bb395fa432532776, type: 3}
+--- !u!1 &1705849404486542776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1705849404070370923, guid: 107bed11f66d8cb4bb395fa432532776,
+    type: 3}
+  m_PrefabInstance: {fileID: 1800829907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &934835157
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705849404486542776}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df77a6f43d0f1b74e86240523f1e8b18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &2082831618171158274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2082831617555776721, guid: 107bed11f66d8cb4bb395fa432532776,

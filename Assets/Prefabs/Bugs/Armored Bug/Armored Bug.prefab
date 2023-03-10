@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1887726750}
-  - component: {fileID: 1006936070}
   m_Layer: 0
   m_Name: Armored Bug Model
   m_TagString: Untagged
@@ -33,26 +32,6 @@ Transform:
   m_Father: {fileID: 4826364758280134524}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1006936070
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887726749}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 66ca9bf0145725543a1e8a693589f362, type: 3}
-  m_Controller: {fileID: 9100000, guid: e761ace889a78a946967af8d6890f71d, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3549495276793672022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1370,32 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 95980759410839360, guid: f34984106ed4c94479de1e71ca180b73, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f34984106ed4c94479de1e71ca180b73, type: 3}
+--- !u!1 &1462720038578650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1462720695320296, guid: f34984106ed4c94479de1e71ca180b73,
+    type: 3}
+  m_PrefabInstance: {fileID: 1060968242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &936556624
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462720038578650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 68c04b5e7eec63c47bfeb07d51f69f90, type: 3}
+  m_Controller: {fileID: 9100000, guid: 8995d45d53b071448a9c4aef85fb4460, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!4 &4673369087647204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4673369876368086, guid: f34984106ed4c94479de1e71ca180b73,
