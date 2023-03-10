@@ -212,6 +212,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -223,6 +224,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 419982558, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+      propertyPath: m_Name
+      value: Stealth Bug Model
+      objectReference: {fileID: 0}
     - target: {fileID: 7606816294703049700, guid: 5a8b1c97452ecfd4a846feb7f2902d99,
         type: 3}
       propertyPath: m_Name
@@ -285,6 +290,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+--- !u!1 &492917990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 419982558, guid: 5a8b1c97452ecfd4a846feb7f2902d99,
+    type: 3}
+  m_PrefabInstance: {fileID: 492917989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &492917991
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492917990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81533b4d3da34df4697aca38b5d819ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &513647347
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +395,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -437,6 +469,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9154e0e8cd50b72428e73ad418082257, type: 3}
+--- !u!1 &523367187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1446138385932239160, guid: 9154e0e8cd50b72428e73ad418082257,
+    type: 3}
+  m_PrefabInstance: {fileID: 523367186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &523367188
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523367187}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d70b9b6d400fd514284dcaad1de0f014, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &700114947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -450,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0fc9ac089b403a24fa1b57d586182fc0, type: 2}
     - target: {fileID: 1511250653, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
       propertyPath: m_Name
-      value: Simple Bug Model
+      value: Explosive Bug Model
       objectReference: {fileID: 0}
     - target: {fileID: 2275987073404762775, guid: 545453ac1a78f4f469c7997b1f12ba3a,
         type: 3}
@@ -514,6 +572,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
+--- !u!1 &700114948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1511250653, guid: 545453ac1a78f4f469c7997b1f12ba3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 700114947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &700114949
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700114948}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 991bfb86a34d2994bbf318e449fd10ae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &1006936068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -521,6 +605,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1887726749, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+      propertyPath: m_Name
+      value: Armored Bug Model
+      objectReference: {fileID: 0}
     - target: {fileID: 1961689518, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -592,3 +680,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+--- !u!1 &1006936069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1887726749, guid: 206e354adc2785b48924cf6d8765d2c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1006936068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1006936070
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006936069}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d70b9b6d400fd514284dcaad1de0f014, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
