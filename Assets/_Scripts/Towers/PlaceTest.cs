@@ -15,6 +15,8 @@ public class PlaceTest : MonoBehaviour
         Vector3 mousePos = Input.mousePosition;
 
         if (mousePos == null) return;
+        if (Camera.current == null) return;
+
         Ray mouseRay = Camera.current.ScreenPointToRay(mousePos);
         RaycastHit hit;
 

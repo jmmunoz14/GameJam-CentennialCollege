@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnplacedBuilding : MonoBehaviour
+public class UnplacedGameObject : MonoBehaviour
 {
-    public GameObject prefab;
-    public LayerMask placeLayer;
-    public LayerMask collisionLayer;
-    public string cameraName;
-    public Vector3 detectionCubeSize;
-    public Vector3 detectionCubeOffset;
-    public Material green;
-    public Material red;
+    // The Prefab that appears when the placement of the item is complete
+    [SerializeField] private GameObject prefabOnPlace;
+    
+    [Header("Collision and Placement")]
+    [SerializeField] private LayerMask placeLayer;
+    [SerializeField] private LayerMask collisionLayer;
+    [SerializeField] private Vector3 detectionCubeSize;
+    [SerializeField] private Vector3 detectionCubeOffset;
     [SerializeField] private Transform followTarget;
 
-    private MeshRenderer[] meshs;
+    [Header("Material")]
+    [SerializeField] private Material validMaterial;
+    [SerializeField] private Material invalidMaterial;
 
+    private MeshRenderer[] meshs;
     private RaycastHit hit;
     private bool canPlace;
     private Vector3 boxCastPosition;
@@ -26,10 +29,7 @@ public class UnplacedBuilding : MonoBehaviour
 
         boxCastPosition = new Vector3(transform.position.x + detectionCubeOffset.x,
             transform.position.y + detectionCubeOffset.y + detectionCubeSize.y / 2,
-            transform.position.z + detectionCubeOffset.y);
-
-
-        followTarget = GetComponent<Camera>().transform.parent;
+            transform.position.z + detectionCubeOffset.y);        
     }
 
     private void Start()
@@ -42,12 +42,12 @@ public class UnplacedBuilding : MonoBehaviour
     {
         if (IsColliding())
         {
-            AssignMaterialToAllMeshes(red);
+            AssignMaterialToAllMeshes(invalidMaterial);
             canPlace = false;
         }
         else
         {
-            AssignMaterialToAllMeshes(green);
+            AssignMaterialToAllMeshes(validMaterial);
             canPlace = true;
         }
 
@@ -59,7 +59,7 @@ public class UnplacedBuilding : MonoBehaviour
     {
         if (canPlace)
         {
-            Instantiate(prefab, transform.position, Quaternion.identity);
+            Instantiate(prefabOnPlace, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
