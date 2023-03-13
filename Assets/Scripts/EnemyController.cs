@@ -22,19 +22,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        //Rigidbody rb = GetComponent<Rigidbody>();
-        //Vector3 v3Velocity = rb.velocity;
-        //if (thisAgent.isStopped)
-        //{
-        //    anim.SetFloat("Velocity", 0);
-        //}
-        //else
-        //{
-        //    anim.SetFloat("Velocity", 01);
-
-        //}
-        Debug.Log(thisAgent.isStopped);
         anim.SetBool("isMoving", !thisAgent.isStopped);
-        
     }
+
 }

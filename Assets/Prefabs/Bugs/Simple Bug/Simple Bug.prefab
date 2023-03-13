@@ -42,11 +42,12 @@ GameObject:
   m_Component:
   - component: {fileID: 419267519264102354}
   - component: {fileID: 7721185872527785489}
+  - component: {fileID: 8371610861772347859}
   - component: {fileID: 7059670800262038019}
   - component: {fileID: 5319873973155838290}
   m_Layer: 0
   m_Name: Simple Bug
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,6 +90,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &8371610861772347859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5099372174953275943}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.42, y: 1.13, z: 3.1}
+  m_Center: {x: 0, y: 1.12, z: 0}
 --- !u!54 &7059670800262038019
 Rigidbody:
   m_ObjectHideFlags: 0
