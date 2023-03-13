@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exit: {fileID: 0}
   thisAgent: {fileID: 2065893847}
+  anim: {fileID: 936556624}
 --- !u!1001 &1060968242
 PrefabInstance:
   m_ObjectHideFlags: 0

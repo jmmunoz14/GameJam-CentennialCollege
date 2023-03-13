@@ -119,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exit: {fileID: 0}
   thisAgent: {fileID: 1953001692}
+  anim: {fileID: 4022152074116518850}
 --- !u!1001 &4022152074116518855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -149,22 +150,22 @@ PrefabInstance:
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
@@ -174,7 +175,7 @@ PrefabInstance:
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}

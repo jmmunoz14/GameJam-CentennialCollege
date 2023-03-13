@@ -41,10 +41,7 @@ public class WaveGenerator : MonoBehaviour
             switch (bugType)
             {
                 case BugType.SimpleBug:
-                    Vector3 rot = bugPrefabs[0].transform.rotation.eulerAngles;
-                    rot = new Vector3(rot.x, rot.y + 180, rot.z);
-                    Instantiate(bugPrefabs[0], enterance.position, bugPrefabs[0].transform.rotation);
-                    //bugPrefabs[0].transform.rotation = Quaternion.Euler(rot);
+                    Instantiate(bugPrefabs[0], enterance.position, Quaternion.identity);
                     break;
                 case BugType.ArmoredBug:
                     Instantiate(bugPrefabs[1], enterance.position, Quaternion.identity);
