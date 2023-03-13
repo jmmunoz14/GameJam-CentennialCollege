@@ -12,6 +12,13 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private Animator anim;
 
+    [SerializeField] private int hp = 100;
+    [SerializeField] private float speed;
+
+    [SerializeField] private bool armor = false;
+    [SerializeField] private bool explode = false;
+    [SerializeField] private bool stealth = false;
+
     public static event Action OnBugDeath;
     void Start()
     {
@@ -32,4 +39,15 @@ public class EnemyController : MonoBehaviour
         anim.SetTrigger("Die");
         OnBugDeath?.Invoke();
     }
+
+    public void TakeDamage(int damage)
+    {
+        if (!armor)
+        {
+            hp -= damage;
+        }
+        Debug.Log(this.name + " HP: " + hp);
+    }
+
+
 }

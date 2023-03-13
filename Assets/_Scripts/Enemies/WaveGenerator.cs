@@ -27,7 +27,12 @@ public class WaveGenerator : MonoBehaviour
         isGeneratingWave = true;
         StartCoroutine(GenerateWaves());
 
-    }    
+    }
+
+    public BugType getBugType()
+    {
+        return bugType;
+    }
 
     IEnumerator GenerateWaves()
     {
