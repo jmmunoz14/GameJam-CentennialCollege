@@ -16,7 +16,7 @@ public class SprayController : MonoBehaviour
         
     }
 
-
+    //reveals invisible enemies and also slows enemies
     public void onAction(bool active)
     {
         if (gameObject.activeSelf)

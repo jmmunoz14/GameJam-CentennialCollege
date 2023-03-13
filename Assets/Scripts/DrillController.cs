@@ -15,7 +15,7 @@ public class DrillController : MonoBehaviour
     {
         
     }
-
+    // Drill destroys armor for tank enemies
     public void onAction(bool active)
     {
         if (gameObject.activeSelf)
