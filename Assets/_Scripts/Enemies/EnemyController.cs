@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private Animator anim;
 
+    public static event Action OnBugDeath;
     void Start()
     {
         exit = GameObject.Find("Exit").transform;
@@ -25,4 +27,9 @@ public class EnemyController : MonoBehaviour
         anim.SetBool("isMoving", !thisAgent.isStopped);
     }
 
+    void Death()
+    {
+        anim.SetTrigger("Die");
+        OnBugDeath?.Invoke();
+    }
 }
