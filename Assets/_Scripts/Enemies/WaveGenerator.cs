@@ -27,33 +27,38 @@ public class WaveGenerator : MonoBehaviour
         isGeneratingWave = true;
         StartCoroutine(GenerateWaves());
 
-    }
-
-    void Update()
-    {
-
-    }
+    }    
 
     IEnumerator GenerateWaves()
     {
+        EnemyController newEnemy;
+
         while (isGeneratingWave)
         {
+            newEnemy = null;
             switch (bugType)
             {
                 case BugType.SimpleBug:
-                    Instantiate(bugPrefabs[0], enterance.position, Quaternion.identity);
+                    newEnemy = Instantiate(bugPrefabs[0], enterance.position, Quaternion.identity).GetComponent<EnemyController>();
                     break;
                 case BugType.ArmoredBug:
-                    Instantiate(bugPrefabs[1], enterance.position, Quaternion.identity);
+                    newEnemy = Instantiate(bugPrefabs[1], enterance.position, Quaternion.identity).GetComponent<EnemyController>();
                     break;
                 case BugType.ExplosiveBug:
-                    Instantiate(bugPrefabs[2], enterance.position, Quaternion.identity);
+                    newEnemy = Instantiate(bugPrefabs[2], enterance.position, Quaternion.identity).GetComponent<EnemyController>();
                     break;
                 case BugType.StealthBug:
-                    Instantiate(bugPrefabs[3], enterance.position, Quaternion.identity);
+                    newEnemy = Instantiate(bugPrefabs[3], enterance.position, Quaternion.identity).GetComponent<EnemyController>();
                     break;
                 default:
-                    break;
+                    break;                
+            }
+
+
+            if (newEnemy != null)
+            {
+                BugLedger.Instance.Bugs.Add(newEnemy);
+                Debug.Log("BugCount" + BugLedger.Instance.Bugs.Count);
             }
 
             yield return new WaitForSeconds(nextWaveTimeInSec);
