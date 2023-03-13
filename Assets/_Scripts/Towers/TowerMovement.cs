@@ -36,7 +36,19 @@ public class TowerMovement : MonoBehaviour
             float distanceToTarget = Vector3.Distance(thisTransform.position, currentTarget.transform.position);
             if (distanceToTarget > radiusOfVision)
             {
-                currentTarget = FindClosestTarget();
+                // Look for the next closest target that may come into vision of the tower
+                GameObject nextTarget = null;
+                float nextDistance = Mathf.Infinity;
+                foreach (GameObject possibleTarget in possibleTargets)
+                {
+                    float distanceToPossibleTarget = Vector3.Distance(thisTransform.position, possibleTarget.transform.position);
+                    if (distanceToPossibleTarget <= radiusOfVision && distanceToPossibleTarget < nextDistance && possibleTarget != currentTarget)
+                    {
+                        nextDistance = distanceToPossibleTarget;
+                        nextTarget = possibleTarget;
+                    }
+                }
+                currentTarget = nextTarget;
             }
 
             Vector3 direction = currentTarget.transform.position - thisTransform.position;
@@ -49,7 +61,8 @@ public class TowerMovement : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No target assigned to TowerMovement script!");
+            // Look for the closest target within the radius of vision
+            currentTarget = FindClosestTarget();
         }
     }
 
