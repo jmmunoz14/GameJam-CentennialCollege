@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3496594623702066902}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.0292797, y: 0, z: 0.443285}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 5603687437922101402}
   - component: {fileID: 7569556611372991542}
   - component: {fileID: 1815582817128084253}
+  - component: {fileID: 520956443}
+  - component: {fileID: 520956442}
   m_Layer: 0
   m_Name: HorizontalAxis
   m_TagString: Untagged
@@ -168,6 +170,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &520956443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225126850366739311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78cd742c0bfc0634f9432349808fd949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerDetection: {fileID: 520956442}
+  _rotationSpeedInDegrees: 180
+--- !u!114 &520956442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6225126850366739311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5253964d43f841458f78dd4baaad61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 14
+  _searchIntervalInSeconds: 0.96
 --- !u!1001 &4343457515973018878
 PrefabInstance:
   m_ObjectHideFlags: 0
