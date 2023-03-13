@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Models/Drill_01.meta
-guid: fce9eb337d8e98349a88d4359fedd423
+
+guid: cd46c7ee7ef263342902e6450fe2129e
+
 folderAsset: yes
-========
 guid: ae4247b21328eec4f8fb24112e19f8b7
->>>>>>>> main:Assets/Scenes/Menus/GameEnd.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
