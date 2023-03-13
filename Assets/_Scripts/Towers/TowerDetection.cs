@@ -5,13 +5,83 @@ using UnityEngine;
 
 public class TowerDetection : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+
+    private Transform _currentTarget;
+    public Transform CurrentTarget
     {
-        Debug.Log("Bug Entered");
+        get 
+        {
+            return _currentTarget;
+        }
+        private set
+        {
+            _currentTarget = value;
+            OnTargetUpdate?.Invoke(_currentTarget);
+        }
     }
 
-    private void OnTriggerExit(Collider other)
+    public Action<Transform> OnTargetUpdate;
+
+
+    [SerializeField] private float range;
+    [SerializeField] private float _searchIntervalInSeconds;
+    private bool _isSearching;
+
+
+    private void Start()
     {
-        Debug.Log("Bug Exited");
+        StartSearching();
+    }    
+
+    private void Update()
+    {
+        if (_currentTarget == null) return;
+
+        // Check to see if the target went out of range
+        if (Vector3.Distance(CurrentTarget.position, transform.position) > range)
+        {
+            CurrentTarget = null;
+            StartSearching();
+        }
+    }
+
+    public void GetNextTarget()
+    {
+        // > loop through all enemies on screen
+        foreach (EnemyController bug in BugLedger.Instance.Bugs)
+        {
+            if (Vector3.Distance(bug.transform.position, transform.position) <= range)
+            {
+                CurrentTarget = bug.transform;
+                StopSearching();
+                return;
+            }
+        }
+    }
+
+    private void StartSearching()
+    {
+        _isSearching = true;
+        StartCoroutine(SearchForTargets());
+    }
+
+    private void StopSearching()
+    {
+        _isSearching = false;
+    }
+
+    IEnumerator SearchForTargets()
+    {
+        while (_isSearching)
+        {
+            GetNextTarget();
+            yield return new WaitForSeconds(_searchIntervalInSeconds);
+        }
+    }
+   
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }
