@@ -21,6 +21,7 @@ TagManager:
   - Exit
   - Enterace
   - Enemy
+  - AvailableTerrain
   layers:
   - Default
   - TransparentFX
