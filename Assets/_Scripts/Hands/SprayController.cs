@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrillController : MonoBehaviour
+public class SprayController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,20 +16,22 @@ public class DrillController : MonoBehaviour
         
     }
 
+    //reveals invisible enemies and also slows enemies
     public void onAction(bool active)
     {
         if (gameObject.activeSelf)
         {
             if (active)
             {
-                Debug.Log("Drill pressed");
+                Debug.Log("Spray pressed");
 
             }
             else
             {
-                Debug.Log("Drill unpressed");
+                Debug.Log("Spray unpressed");
             }
         }
 
     }
+
 }

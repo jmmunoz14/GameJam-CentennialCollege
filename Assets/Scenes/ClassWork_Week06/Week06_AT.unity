@@ -330,6 +330,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1553358060}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: switchHand
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ToolController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721430129284198614, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
+        type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7, type: 3}
 --- !u!114 &81762081 stripped
@@ -495,6 +530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spray
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c8f0ae753887daf4284f91e5f0765b51,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f0ae753887daf4284f91e5f0765b51, type: 3}
 --- !u!1 &432103689 stripped
@@ -515,6 +555,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3296f7e36311aec498d3ecd1a08a1b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &649154497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5079079790483669107, guid: d3597b0cc7aa7b24f8ca45621ed25aa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8939499961193120790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &679656525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8937897795336109793, guid: d3597b0cc7aa7b24f8ca45621ed25aa7,
@@ -546,7 +592,7 @@ PrefabInstance:
     - target: {fileID: 6318076826015889661, guid: 325c7931408b77a4f803899194cf18c6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6693899128239137351, guid: 325c7931408b77a4f803899194cf18c6,
         type: 3}
@@ -1074,6 +1120,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8939499961193120790}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1553358060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649154497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 813dc4899a9d7a04483e3efff22ce90a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handModels:
+  - {fileID: 1940225187}
+  - {fileID: 432103689}
 --- !u!114 &1761600057 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 694642950153307612, guid: 8b6302bdc05eb6c4a94d8029b1a93aa7,
