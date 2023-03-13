@@ -18,6 +18,8 @@ TagManager:
   - ScarecrowHat
   - ScarecrowHead
   - FireableArrow
+  - Exit
+  - Enterace
   layers:
   - Default
   - TransparentFX
