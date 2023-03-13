@@ -42,11 +42,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4022152074884418551}
   - component: {fileID: 1953001692}
+  - component: {fileID: 6740157911537701345}
   - component: {fileID: 1953001691}
   - component: {fileID: 1953001690}
   m_Layer: 0
   m_Name: Stealth Bug
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,6 +90,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &6740157911537701345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022152074884418550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.91, y: 1.29, z: 1.84}
+  m_Center: {x: 0, y: 0.84, z: 0}
 --- !u!54 &1953001691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.42
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8349397572283510614, guid: 7c0228a7b34cf124fa1c44e0e7e1d572,
         type: 3}
