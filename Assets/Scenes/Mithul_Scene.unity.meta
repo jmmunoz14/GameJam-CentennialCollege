@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ADG_Textures.meta
+guid: e1c0db66d35bfe94987ed0a8ffb286a1
+folderAsset: yes
+========
 guid: b889b0a527fe8ac4fbf10119691ee4bf
+>>>>>>>> main:Assets/Scenes/Mithul_Scene.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
