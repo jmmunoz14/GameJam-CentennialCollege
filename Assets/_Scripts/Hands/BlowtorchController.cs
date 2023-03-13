@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BlowtorchController : MonoBehaviour
 {
+    public ParticleSystem blowtorchParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class BlowtorchController : MonoBehaviour
             if (active)
             {
                 Debug.Log("Drill pressed");
+                blowtorchParticles.Play();
 
             }
             else

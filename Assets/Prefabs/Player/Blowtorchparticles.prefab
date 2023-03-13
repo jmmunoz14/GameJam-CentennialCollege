@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1317469099308548595}
   - component: {fileID: 1317469099308548594}
   m_Layer: 0
-  m_Name: SprayBlowtorch
+  m_Name: Blowtorchparticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

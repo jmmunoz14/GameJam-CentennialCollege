@@ -876,6 +876,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab96c7bb0347f74996386a34331f27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blowtorchParticles: {fileID: 1317469099308548595, guid: a6a0d4617ec211d40a23dadd6a31ec23,
+    type: 3}
 --- !u!4 &835873254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90f6ab012daf6284ebaacb0f743c2b71,
