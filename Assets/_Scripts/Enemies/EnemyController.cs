@@ -56,7 +56,7 @@ public class EnemyController : MonoBehaviour
             Death();
         }
 
-        Debug.Log(this.name + " HP: " + enemyHealth.currentHealth);
+        //Debug.Log(this.name + " HP: " + enemyHealth.currentHealth);
     }
 
 

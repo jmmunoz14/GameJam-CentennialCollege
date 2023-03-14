@@ -9,14 +9,17 @@ public class AreaDamager : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("collision");
+            //Debug.Log("collision");
             StartCoroutine(DamageBug(other.gameObject));
         }
     }
 
     IEnumerator DamageBug(GameObject bug)
     {
-        bug.GetComponent<EnemyController>().TakeDamage(10);
-        yield return new WaitForSeconds(1.0f);
+        while (true)
+        {
+            bug.GetComponent<EnemyController>().TakeDamage(5);
+            yield return new WaitForSeconds(1.0f);
+        }
     }
 }
