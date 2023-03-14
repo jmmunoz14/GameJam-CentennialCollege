@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 299699410}
   - component: {fileID: 299699412}
   - component: {fileID: 299699411}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434598426}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864605002}
   - component: {fileID: 864605003}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 1657461301}
   - component: {fileID: 1657461303}
   - component: {fileID: 1657461302}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778587823}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 1912681622}
   - component: {fileID: 1912681621}
   - component: {fileID: 1912681620}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Canvas '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,14 +550,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15209e94c7ff3b40a92ea459894cd2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 0}
   exit: {fileID: 0}
   thisAgent: {fileID: 1953001692}
   anim: {fileID: 4022152074116518850}
   hp: 0
   speed: 0
-  armor: 0
-  explode: 0
-  stealth: 1
+  isArmored: 0
+  isExplosive: 0
+  isSteathly: 1
 --- !u!114 &1463545679
 MonoBehaviour:
   m_ObjectHideFlags: 0
