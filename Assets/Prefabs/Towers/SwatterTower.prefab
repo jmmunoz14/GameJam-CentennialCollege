@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 260477590383907781}
   - component: {fileID: 809309255704588426}
   - component: {fileID: 1007080235}
+  - component: {fileID: 2067297697}
+  - component: {fileID: 2067297696}
   m_Layer: 0
   m_Name: FlySwatter
   m_TagString: Untagged
@@ -104,6 +106,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!135 &2067297697
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248993141273758765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.7339847
+  m_Center: {x: 0.0015621198, y: -0.00013503004, z: 7.726879}
+--- !u!114 &2067297696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248993141273758765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756fa50e2e9278e4f98cb9f1ef1061e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageRate: 20
 --- !u!1 &3454704763083798890
 GameObject:
   m_ObjectHideFlags: 0
