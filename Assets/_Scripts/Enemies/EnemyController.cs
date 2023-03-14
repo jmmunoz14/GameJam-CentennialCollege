@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    public EnemyHealth enemyHealth;
+
     //[SerializeField] private Transform enterance;
     [SerializeField] private Transform exit;
     [SerializeField] private NavMeshAgent thisAgent;
@@ -26,6 +28,7 @@ public class EnemyController : MonoBehaviour
         thisAgent = GetComponent<NavMeshAgent>();
         //anim = GetComponent<Animator>();
         thisAgent.SetDestination(exit.position);
+        enemyHealth = GetComponent<EnemyHealth>();
 
     }
 
@@ -40,17 +43,23 @@ public class EnemyController : MonoBehaviour
         OnBugDeath?.Invoke();
     }
 
+
     public void TakeDamage(int damage)
     {
         if (!isArmored)
         {
-            hp -= damage;
-        }else if(hp <= 0)
+            enemyHealth.currentHealth -= damage;
+        }
+
+        if (enemyHealth.currentHealth <= 0)
         {
             Death();
         }
-        Debug.Log(this.name + " HP: " + hp);
+
+        Debug.Log(this.name + " HP: " + enemyHealth.currentHealth);
     }
+
+
 
 
 }

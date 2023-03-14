@@ -370,6 +370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Armored Bug
       objectReference: {fileID: 0}
+    - target: {fileID: 3549495276793672022, guid: 38ad2d17a7e7127429ac34a1bfc42020,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4826364758280134524, guid: 38ad2d17a7e7127429ac34a1bfc42020,
         type: 3}
       propertyPath: m_RootOrder
@@ -767,6 +772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FumigatorTower
       objectReference: {fileID: 0}
+    - target: {fileID: 3496594623702066902, guid: 66ad64d565da1ac49898a0c39b519b24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_RootOrder
@@ -790,22 +800,22 @@ PrefabInstance:
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: -0.7778505
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.6284493
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
@@ -815,7 +825,7 @@ PrefabInstance:
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 282.128
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
@@ -858,7 +868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f0741d31a0a7744a04d2af8c62ba6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageRate: 40
 --- !u!1 &299699409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &394859341
 Transform:
   m_ObjectHideFlags: 0
@@ -1724,10 +1733,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1501619776, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890575429, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890575429, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890575429, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3549495276793672022, guid: 206e354adc2785b48924cf6d8765d2c0,
         type: 3}
       propertyPath: m_Name
       value: Explosive Bug
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549495276793672022, guid: 206e354adc2785b48924cf6d8765d2c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4826364758280134524, guid: 206e354adc2785b48924cf6d8765d2c0,
         type: 3}
@@ -2051,15 +2081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64725362b8224c146b08ea9865acdcc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterance: {fileID: 751333248}
-  nextWaveTimeInSec: 5
-  bugPrefabs:
-  - {fileID: 5099372174953275943, guid: 9154e0e8cd50b72428e73ad418082257, type: 3}
-  - {fileID: 3549495276793672022, guid: 206e354adc2785b48924cf6d8765d2c0, type: 3}
-  - {fileID: 6912774720061534945, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
-  - {fileID: 4022152074884418550, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
-  isGeneratingWave: 0
-  bugType: 0
+  entrance: {fileID: 0}
+  waves: []
 --- !u!1001 &776898736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4037,10 +4060,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1657461301, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657461301, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657461301, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912681623, guid: 5a8b1c97452ecfd4a846feb7f2902d99, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4022152074884418550, guid: 5a8b1c97452ecfd4a846feb7f2902d99,
         type: 3}
       propertyPath: m_Name
       value: Stealth Bug
+      objectReference: {fileID: 0}
+    - target: {fileID: 4022152074884418550, guid: 5a8b1c97452ecfd4a846feb7f2902d99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4022152074884418551, guid: 5a8b1c97452ecfd4a846feb7f2902d99,
         type: 3}
@@ -4730,6 +4774,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1279717715, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279717715, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279717715, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315565376, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2275987073404762775, guid: 545453ac1a78f4f469c7997b1f12ba3a,
         type: 3}
       propertyPath: m_RootOrder
@@ -4789,6 +4849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Armored Bug (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912774720061534945, guid: 545453ac1a78f4f469c7997b1f12ba3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 545453ac1a78f4f469c7997b1f12ba3a, type: 3}
@@ -5125,6 +5190,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1049457292, guid: e9da174fff6239c46b2d2a2256e8a25d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116679165, guid: e9da174fff6239c46b2d2a2256e8a25d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116679165, guid: e9da174fff6239c46b2d2a2256e8a25d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2116679165, guid: e9da174fff6239c46b2d2a2256e8a25d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2275987073404762775, guid: e9da174fff6239c46b2d2a2256e8a25d,
         type: 3}
       propertyPath: m_RootOrder
@@ -5184,6 +5265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Explosive Bug (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912774720061534945, guid: e9da174fff6239c46b2d2a2256e8a25d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9da174fff6239c46b2d2a2256e8a25d, type: 3}
@@ -5445,6 +5531,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Simple Bug
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099372174953275943, guid: 9154e0e8cd50b72428e73ad418082257,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9154e0e8cd50b72428e73ad418082257, type: 3}
