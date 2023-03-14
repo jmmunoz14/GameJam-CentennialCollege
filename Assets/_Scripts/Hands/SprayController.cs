@@ -8,45 +8,47 @@ public class SprayController : MonoBehaviour
 
     bool onActionCalled = false;
 
-    LayerMask bugLayer;
+    LayerMask bugLayer = 9;
 
     public ParticleSystem foamParticles;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        foamParticles.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        foamParticles.Play();
 
         if (onActionCalled)
         {
-            Debug.Log("Drill pressed");
             Vector3 fwd = rayCastOrigin.TransformDirection(Vector3.forward);
 
-
-            if (Physics.Raycast(rayCastOrigin.position, fwd, 1f, bugLayer)) { 
+            if (Physics.SphereCast(rayCastOrigin.position, 0.1f, fwd, out RaycastHit hit, 1f, bugLayer)) 
+            {
+                hit.collider.gameObject.GetComponent<EnemyController>().stealth = false;
                 print("There is something in front of the object!");
             }
 
-            Vector3 forward = rayCastOrigin.TransformDirection(Vector3.forward) * 1f;
-            Debug.DrawRay(rayCastOrigin.position, forward, Color.cyan);
-
+            //OnDrawGizmosSelected();
         }
 
-        foamParticles.Stop();
     }
 
     //reveals invisible enemies and also slows enemies
     public void onAction(bool active)
     {
-        if (gameObject.activeSelf)
+        if (gameObject.activeSelf && active)
         {
+            Debug.Log("Spray pressed");
             onActionCalled = active;
+            foamParticles.Play();
+        }
+        else if (gameObject.activeSelf && !active) {
+            Debug.Log("Particles");
+            foamParticles.Stop();
         }
 
     }
