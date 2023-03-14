@@ -8,6 +8,7 @@ public class WaveDestroyer : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            GameState.Instance.DamagePlayer(1);
             Destroy(other.gameObject);
         }
     }

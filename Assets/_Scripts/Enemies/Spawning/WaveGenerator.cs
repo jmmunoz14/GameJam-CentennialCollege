@@ -17,15 +17,7 @@ public class WaveGenerator : MonoBehaviour
     private bool isFirstWave = true;
 
     private WaveGroup _currentWaveGroup;
-
-    public enum BugType
-    {
-        SimpleBug,
-        ArmoredBug,
-        ExplosiveBug,
-        StealthBug
-
-    }
+    
     void Start()
     {
         isGeneratingWave = true;
