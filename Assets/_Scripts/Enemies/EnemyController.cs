@@ -29,6 +29,7 @@ public class EnemyController : MonoBehaviour
         //anim = GetComponent<Animator>();
         thisAgent.SetDestination(exit.position);
         enemyHealth = GetComponent<EnemyHealth>();
+        GameState.Instance.OnGameLose += Stop;
 
     }
 
@@ -62,6 +63,17 @@ public class EnemyController : MonoBehaviour
         }
 
         //Debug.Log(this.name + " HP: " + enemyHealth.currentHealth);
+    }
+
+    private void OnDestroy()
+    {
+        GameState.Instance.OnGameLose -= Stop;
+
+    }
+
+    private void Stop()
+    {
+        thisAgent.isStopped = true;
     }
 
 

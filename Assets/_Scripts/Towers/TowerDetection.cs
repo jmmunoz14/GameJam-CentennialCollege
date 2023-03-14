@@ -53,8 +53,18 @@ public class TowerDetection : MonoBehaviour
     {
 
         // > loop through all enemies on screen
+        List<int> indexsToDelete = new List<int>();
+        int i = 0;
         foreach (EnemyController bug in BugLedger.Instance.Bugs)
         {
+
+            if(bug == null)
+            {
+                indexsToDelete.Add(i);
+                i++;
+                continue;
+            }
+            i++;
             if (bug.GetComponent<EnemyController>().isSteathly)
             {
                 continue;
@@ -67,6 +77,11 @@ public class TowerDetection : MonoBehaviour
                 StopSearching();
                 return;
             }
+        }
+
+        foreach (int index in indexsToDelete)
+        {
+            BugLedger.Instance.Bugs.RemoveAt(index);
         }
     }
 

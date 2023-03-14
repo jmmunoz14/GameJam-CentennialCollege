@@ -16,7 +16,7 @@ public class AreaDamager : MonoBehaviour
 
     IEnumerator DamageBug(GameObject bug)
     {
-        while (true)
+        while (bug != null)
         {
             bug.GetComponent<EnemyController>().TakeDamage(5);
             yield return new WaitForSeconds(1.0f);
