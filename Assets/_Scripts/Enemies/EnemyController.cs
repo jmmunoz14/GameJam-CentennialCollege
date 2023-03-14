@@ -45,6 +45,9 @@ public class EnemyController : MonoBehaviour
         if (!armor)
         {
             hp -= damage;
+        }else if(hp <= 0)
+        {
+            Death();
         }
         Debug.Log(this.name + " HP: " + hp);
     }
