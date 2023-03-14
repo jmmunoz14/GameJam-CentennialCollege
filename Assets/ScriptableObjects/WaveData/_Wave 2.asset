@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WaveGroups:
   - {fileID: 11400000, guid: 30580446b2c2f4047bd9d77aab4c2dc7, type: 2}
+  - {fileID: 11400000, guid: 052fd0de29da5144abe100d997fecd09, type: 2}
+  - {fileID: 11400000, guid: 5410995e6fbe73448a312b1e423390b1, type: 2}
+  - {fileID: 11400000, guid: 11ad2ce18aa8dab41837f44b9c82c3a4, type: 2}
+  - {fileID: 11400000, guid: 052fd0de29da5144abe100d997fecd09, type: 2}
