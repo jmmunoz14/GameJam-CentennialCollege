@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bbc2d4745d32ca48bb415e095fda031, type: 3}
   m_Name: Group_Armour_B
   m_EditorClassIdentifier: 
-  EnemyPrefab: {fileID: 3549495276793672022, guid: 206e354adc2785b48924cf6d8765d2c0,
+  EnemyPrefab: {fileID: 3549495276793672022, guid: 6187c139f2e6d854f97f7b44e86a7e58,
     type: 3}
   EnemyCount: 1
   spawnIntervalSeconds: 1
