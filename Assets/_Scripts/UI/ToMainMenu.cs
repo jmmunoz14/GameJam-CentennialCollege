@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToMainMenu : MonoBehaviour
 {
     public void GotToMainMenu()
     {
-        throw new NotImplementedException("Changing Scene to Main Menu Not Implemented");
+        Debug.Log("Moving To Main Menu");
+        SceneManager.LoadScene(0);
     }
 }
 

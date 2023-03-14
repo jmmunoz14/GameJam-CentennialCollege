@@ -9,14 +9,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3382666653114687059}
-  - component: {fileID: 3382666653114687052}
+  - component: {fileID: 7763951929569081731}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3382666653114687059
 Transform:
   m_ObjectHideFlags: 0
@@ -36,7 +36,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3382666653114687052
+--- !u!114 &7763951929569081731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3382666653114687058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cbfd9a5405751d4f8208813933ac298, type: 3}
+  m_Script: {fileID: 11500000, guid: f0cb75e0db8d3f446a2e8b6965c72d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3382666653259564428

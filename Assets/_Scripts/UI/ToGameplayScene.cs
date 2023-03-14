@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToGameplayScene : MonoBehaviour
 {
     public void GoToGameplayScene()
     {
-        throw new NotImplementedException("Changing Scene to Gameplay Scene Not Implemented");
+        Debug.Log("Moving To GamePlayScene");
+        SceneManager.LoadScene(1);
     }
 }
