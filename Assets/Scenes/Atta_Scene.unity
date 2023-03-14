@@ -491,7 +491,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &235172575
 PrefabInstance:
@@ -573,10 +573,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: FumigatorTower
       objectReference: {fileID: 0}
+    - target: {fileID: 3496594623702066902, guid: 66ad64d565da1ac49898a0c39b519b24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4309301510174227564, guid: 66ad64d565da1ac49898a0c39b519b24,
         type: 3}
@@ -1441,7 +1446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &751333249
 MonoBehaviour:
@@ -1823,7 +1828,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &888381386
 PrefabInstance:
@@ -2059,7 +2064,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1096411783
 BoxCollider:
@@ -2128,7 +2133,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198093584
 GameObject:
@@ -2239,7 +2244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1295411049
 PrefabInstance:
@@ -3020,7 +3025,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733760861
 GameObject:
@@ -3122,6 +3127,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733760861}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1775720499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3876246183930519391, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_Name
+      value: SwatterTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.888918
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.090703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.6037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4503848054412281317, guid: 3282af4d8e2eb804d8deba9106e0b244,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3282af4d8e2eb804d8deba9106e0b244, type: 3}
 --- !u!1 &1786956406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,7 +3233,7 @@ Transform:
   - {fileID: 1461801675}
   - {fileID: 1733760862}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1909468639
 GameObject:
