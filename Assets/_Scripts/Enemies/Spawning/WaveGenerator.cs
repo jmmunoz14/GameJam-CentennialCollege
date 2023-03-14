@@ -6,20 +6,14 @@ using UnityEngine.AI;
 
 public class WaveGenerator : MonoBehaviour
 {
-    [SerializeField] private Transform enterance;
-    [SerializeField] private int nextWaveTimeInSec = 5;
-
-    [SerializeField] GameObject[] bugPrefabs;
-
-    [SerializeField] private bool isGeneratingWave = true;
-
-    [SerializeField] private BugType bugType = BugType.SimpleBug;
-
+    [SerializeField] private Transform entrance;
     [SerializeField] private List<Wave> waves = new List<Wave>();
+
     private int _waveIndex = 0;
     private int _waveGroupIndex = 0;
     private int _enemyIndex = 0;
 
+    private bool isGeneratingWave = true;
     private bool isFirstWave = true;
 
     private WaveGroup _currentWaveGroup;
@@ -85,7 +79,7 @@ public class WaveGenerator : MonoBehaviour
             if (_currentWaveGroup.EnemyPrefab != null)
             {
                 EnemyController newEnemy;
-                newEnemy = Instantiate(_currentWaveGroup.EnemyPrefab, enterance.position, Quaternion.identity).GetComponent<EnemyController>();
+                newEnemy = Instantiate(_currentWaveGroup.EnemyPrefab, entrance.position, Quaternion.identity).GetComponent<EnemyController>();
                 BugLedger.Instance.Bugs.Add(newEnemy);
             }
 
