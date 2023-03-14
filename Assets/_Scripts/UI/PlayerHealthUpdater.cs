@@ -10,10 +10,12 @@ public class PlayerHealthUpdater : MonoBehaviour
     void Start()
     {
         GameState.Instance.OnHealthChanged += UpdateHealth;
+        healthValue.text = 1.ToString();
     }
 
     private void UpdateHealth(int health)
     {
+        Debug.Log("Updating Health");
         healthValue.text = health.ToString();
     }
 

@@ -20,7 +20,6 @@ public class TowerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("posisition " + availablePosition.transform.position.ToString());
 
     }
 
@@ -29,16 +28,14 @@ public class TowerController : MonoBehaviour
 
         if(collision.gameObject.tag == "AvailableTerrain")
         {
-            Debug.Log("available " + collision.gameObject.name);
-            Debug.Log("current transform" + availablePosition.position.ToString());
 
             transform.rotation = Quaternion.Euler(0, 0, 0);
 
         }
         else
         {
-            Debug.Log("not available" +collision.gameObject.name);
-            Debug.Log("availablePosition transform" + availablePosition.position.ToString());
+            //    Debug.Log("not available" +collision.gameObject.name);
+            //    Debug.Log("availablePosition transform" + availablePosition.position.ToString());
             //change turrret mode to deactivated
         }
     }
