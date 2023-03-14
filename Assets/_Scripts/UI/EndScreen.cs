@@ -11,7 +11,7 @@ public class EndScreen : MonoBehaviour
 
     private void ShowUI()
     {
-        this.enabled = true;
+        enabled = true;
     }
 
 }
