@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394859340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 5.2}
+  m_LocalPosition: {x: 0.076, y: -0.331, z: 6.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -72,11 +72,11 @@ Halo:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394859340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Color:
     serializedVersion: 2
     rgba: 4278190335
-  m_Size: 2.16
+  m_Size: 1
 --- !u!114 &394859345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +205,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -751,7 +751,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 24.14
+    angle: 16.02
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -895,7 +895,7 @@ ParticleSystem:
           m_RotationOrder: 4
     arc:
       value: 360
-      mode: 0
+      mode: 3
       spread: 0
       speed:
         serializedVersion: 2
@@ -956,7 +956,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 300
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4921,7 +4921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4309301510174227564
 Transform:
   m_ObjectHideFlags: 0
@@ -5119,8 +5119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _towerDetection: {fileID: 520956442}
   _rotationSpeedInDegrees: 180
-  areaDamager: {fileID: 394859340}
-  particleSys: {fileID: 1042115320}
 --- !u!114 &520956442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5133,6 +5131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5253964d43f841458f78dd4baaad61a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  areaDamager: {fileID: 394859340}
+  particleSys: {fileID: 1042115320}
   range: 14
   _searchIntervalInSeconds: 0.96
 --- !u!1001 &4343457515973018878
