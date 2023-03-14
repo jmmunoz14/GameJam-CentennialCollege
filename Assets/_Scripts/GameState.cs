@@ -32,23 +32,7 @@ public class GameState : MonoBehaviour
                 OnGameLose?.Invoke();
             }
         }
-    }
-    private float _remainingTime;
-    private int RemainingTime
-    {
-        get
-        {
-            return (int)_remainingTime;
-        }
-        set
-        {
-            if((int)value !=  _remainingTime)
-            {
-                _remainingTime = value;
-                OnRemainingTimeChanged?.Invoke((int)_remainingTime);
-            }
-        }
-    }
+    }   
 
     [SerializeField] private int _startingHealth;
 
@@ -64,20 +48,13 @@ public class GameState : MonoBehaviour
         {
             _instance = this;
             PlayerHealth = _playerHealth;
+            OnHealthChanged?.Invoke(PlayerHealth);
         }
         if (Instance != this)
         {
             Destroy(this);
         }
-    }
-
-    void Update()
-    {
-        if(_remainingTime > 0f)
-        {
-            _remainingTime -= Time.deltaTime;
-        }
-    }
+    }   
 
     public void DamagePlayer(int amount)
     {
