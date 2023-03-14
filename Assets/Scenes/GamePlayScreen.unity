@@ -5778,6 +5778,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8811737116600653030, guid: 7a9877e0864dbf44c9a444e7a793a50f,
+        type: 3}
+      propertyPath: bugLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 8811737118385588546, guid: 7a9877e0864dbf44c9a444e7a793a50f,
         type: 3}
       propertyPath: lineRenderer
