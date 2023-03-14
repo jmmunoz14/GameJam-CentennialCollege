@@ -26,7 +26,7 @@ public class SprayController : MonoBehaviour
         {
             Vector3 fwd = rayCastOrigin.TransformDirection(Vector3.forward);
 
-            if (Physics.SphereCast(rayCastOrigin.position, 0.1f, fwd, out RaycastHit hit, 1f, bugLayer)) 
+            if (Physics.SphereCast(rayCastOrigin.position, 0.1f, fwd, out RaycastHit hit, 100f, bugLayer)) 
             {
                 hit.collider.gameObject.GetComponent<EnemyController>().isSteathly = false;
                 print("There is something in front of the object!");
