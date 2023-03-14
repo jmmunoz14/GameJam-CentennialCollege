@@ -8,7 +8,7 @@ public class SprayController : MonoBehaviour
 
     bool onActionCalled = false;
 
-    LayerMask bugLayer = 9;
+    public LayerMask bugLayer;
 
     public ParticleSystem foamParticles;
 
