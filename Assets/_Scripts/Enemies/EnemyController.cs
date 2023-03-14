@@ -15,9 +15,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField] public int hp = 100;
     [SerializeField] private float speed;
 
-    [SerializeField] private bool armor = false;
-    [SerializeField] private bool explode = false;
-    [SerializeField] private bool stealth = false;
+    [SerializeField] public bool isArmored = false;
+    [SerializeField] public bool isExplosive = false;
+    [SerializeField] public bool isSteathly = false;
 
     public static event Action OnBugDeath;
     void Start()
@@ -42,9 +42,12 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (!armor)
+        if (!isArmored)
         {
             hp -= damage;
+        }else if(hp <= 0)
+        {
+            Death();
         }
         Debug.Log(this.name + " HP: " + hp);
     }

@@ -7,6 +7,9 @@ public class TowerDetection : MonoBehaviour
 {
 
     private Transform _currentTarget;
+
+    [SerializeField] private GameObject areaDamager;
+    [SerializeField] private ParticleSystem particleSys;
     public Transform CurrentTarget
     {
         get 
@@ -41,18 +44,26 @@ public class TowerDetection : MonoBehaviour
         if (Vector3.Distance(CurrentTarget.position, transform.position) > range)
         {
             CurrentTarget = null;
+            particleSys.Stop();
             StartSearching();
         }
     }
 
     public void GetNextTarget()
     {
+
         // > loop through all enemies on screen
         foreach (EnemyController bug in BugLedger.Instance.Bugs)
         {
+            if (bug.GetComponent<EnemyController>().isSteathly)
+            {
+                continue;
+            }
             if (Vector3.Distance(bug.transform.position, transform.position) <= range)
             {
                 CurrentTarget = bug.transform;
+                particleSys.Play();
+                areaDamager.SetActive(true);
                 StopSearching();
                 return;
             }
