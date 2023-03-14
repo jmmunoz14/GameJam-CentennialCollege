@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SprayController : MonoBehaviour
+public class BlowtorchController : MonoBehaviour
 {
     public Transform rayCastOrigin;
 
@@ -10,38 +10,37 @@ public class SprayController : MonoBehaviour
 
     LayerMask bugLayer;
 
-    public ParticleSystem foamParticles;
+    public ParticleSystem fireParticle;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        foamParticles.Play();
+
+        fireParticle.Play();
+
 
         if (onActionCalled)
         {
             Debug.Log("Drill pressed");
             Vector3 fwd = rayCastOrigin.TransformDirection(Vector3.forward);
 
-
-            if (Physics.Raycast(rayCastOrigin.position, fwd, 1f, bugLayer)) { 
+            if (Physics.Raycast(rayCastOrigin.position, fwd, 0.1f, bugLayer))
                 print("There is something in front of the object!");
-            }
 
-            Vector3 forward = rayCastOrigin.TransformDirection(Vector3.forward) * 1f;
+            Vector3 forward = rayCastOrigin.TransformDirection(Vector3.forward) * 0.1f;
             Debug.DrawRay(rayCastOrigin.position, forward, Color.cyan);
 
         }
 
-        foamParticles.Stop();
+        fireParticle.Stop();
     }
-
-    //reveals invisible enemies and also slows enemies
+    // Drill destroys armor for tank enemies
     public void onAction(bool active)
     {
         if (gameObject.activeSelf)
@@ -50,5 +49,4 @@ public class SprayController : MonoBehaviour
         }
 
     }
-
 }

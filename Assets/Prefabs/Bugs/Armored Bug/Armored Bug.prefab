@@ -134,6 +134,11 @@ MonoBehaviour:
   exit: {fileID: 0}
   thisAgent: {fileID: 2065893847}
   anim: {fileID: 936556624}
+  hp: 0
+  speed: 0
+  armor: 1
+  explode: 0
+  stealth: 0
 --- !u!1001 &1060968242
 PrefabInstance:
   m_ObjectHideFlags: 0
