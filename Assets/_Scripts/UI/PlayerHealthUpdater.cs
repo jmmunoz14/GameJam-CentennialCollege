@@ -15,7 +15,6 @@ public class PlayerHealthUpdater : MonoBehaviour
 
     private void UpdateHealth(int health)
     {
-        Debug.Log("Updating Health");
         healthValue.text = health.ToString();
     }
 

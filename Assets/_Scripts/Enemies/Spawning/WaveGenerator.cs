@@ -22,6 +22,12 @@ public class WaveGenerator : MonoBehaviour
     {
         isGeneratingWave = true;
         StartCoroutine(SpawnWaves());
+        GameState.Instance.OnGameLose += StopSpawning;
+    }
+
+    private void StopSpawning()
+    {
+        isGeneratingWave = false;
     }
 
     void GetNextWaveGroup()
@@ -78,5 +84,10 @@ public class WaveGenerator : MonoBehaviour
             _enemyIndex++;
             yield return new WaitForSeconds(_currentWaveGroup.spawnIntervalSeconds);
         }        
+    }
+
+    private void OnDestroy()
+    {
+        GameState.Instance.OnGameLose -= StopSpawning;
     }
 }
