@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("Starting Game");
-        SceneManager.LoadScene("Mithul_Scene");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
     public void Menu()
     {
         Debug.Log("Main Menu");
-        SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene(1);
         GameManager.score = 0;
     }
 

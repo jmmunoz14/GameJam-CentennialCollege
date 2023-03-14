@@ -8,7 +8,7 @@ public class DrillController : MonoBehaviour
 
     bool onActionCalled = false;
 
-    LayerMask bugLayer;
+    LayerMask bugLayer = 9;
 
 
     // Start is called before the first frame update
@@ -25,8 +25,11 @@ public class DrillController : MonoBehaviour
             Debug.Log("Drill pressed");
             Vector3 fwd = rayCastOrigin.TransformDirection(Vector3.forward);
 
-            if (Physics.Raycast(rayCastOrigin.position, fwd, 0.1f, bugLayer))
+            if (Physics.Raycast(rayCastOrigin.position, fwd, out RaycastHit hit, 0.1f, bugLayer))
+            {
+                hit.collider.gameObject.GetComponent<EnemyController>().isArmored = false;
                 print("There is something in front of the object!");
+            }
 
             Vector3 forward = rayCastOrigin.TransformDirection(Vector3.forward) * 0.1f;
             Debug.DrawRay(rayCastOrigin.position, forward, Color.cyan);
