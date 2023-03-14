@@ -28,7 +28,7 @@ public class SprayController : MonoBehaviour
 
             if (Physics.SphereCast(rayCastOrigin.position, 0.1f, fwd, out RaycastHit hit, 1f, bugLayer)) 
             {
-                hit.collider.gameObject.GetComponent<EnemyController>().stealth = false;
+                hit.collider.gameObject.GetComponent<EnemyController>().isSteathly = false;
                 print("There is something in front of the object!");
             }
 

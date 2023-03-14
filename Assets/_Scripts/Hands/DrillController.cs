@@ -27,7 +27,7 @@ public class DrillController : MonoBehaviour
 
             if (Physics.Raycast(rayCastOrigin.position, fwd, out RaycastHit hit, 0.1f, bugLayer))
             {
-                hit.collider.gameObject.GetComponent<EnemyController>().armor = false;
+                hit.collider.gameObject.GetComponent<EnemyController>().isArmored = false;
                 print("There is something in front of the object!");
             }
 
