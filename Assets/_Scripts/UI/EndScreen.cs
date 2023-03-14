@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EndScreen : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         GameState.Instance.OnGameLose += ShowUI;
     }
